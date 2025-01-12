@@ -1,3 +1,60 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  color: black;
+  background-color: #ddd;
+  max-height: 100vh;
+}
+
+#todoContainer {
+  margin: 30px;
+}
+
+#todoDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+#todoDiv > * {
+  padding: 10px;
+}
+
+#projectList {
+  display: flex;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 20%);
+  grid-auto-rows: 200px;
+  gap: 30px;
+  border-radius: 30px;
+  margin: 20px 50px 0;
+  padding: 10px;
+  background-color: burlywood;
+}
+#projectList li {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  padding: 5px;
+  background-color: white;
+  border-radius: 12px;
+}
+#projectList li > div {
+  display: flex;
+  gap: 4px;
+}
+
+button {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 4px;
 }
